@@ -26,7 +26,7 @@ frase_inpt.pack(fill='x', expand=True)
 
 # Funcao para alterar o texto
 def click():
-    user_input = frase_inpt.get().encode() #obetemos a entrada e transformamos em bytes(enconde)
+    user_input = frase_inpt.get().encode() #obetemos a entrada e transformamos em bytes
     if user_input == key:
         os.system("python decrypter.py")
         label.config(text="Thank you :D")
